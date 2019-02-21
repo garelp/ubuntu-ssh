@@ -4,7 +4,7 @@
 FROM ubuntu:xenial
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends openssh-server iproute2 net-tools dnsutils netcat curl iputils-tracepath iputils-ping wget \
+    && apt-get install -y --no-install-recommends openssh-server iproute2 net-tools dnsutils netcat curl iputils-tracepath iputils-ping wget tcpdump \
     && mkdir -p /opt/startup \
     && echo "root:Docker!" | chpasswd 
 
