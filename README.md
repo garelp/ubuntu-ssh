@@ -14,3 +14,8 @@
 * ip
 * curl
 * netcat
+* tcpdump
+* wget
+* nslookup
+* dig
+
