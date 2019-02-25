@@ -1,7 +1,14 @@
-# Ubuntu container for debug purpose.
-SSHd is installed and active on port 2222
+# Ubuntu container for debug purpose on Azure.
 
-Some tools are already installed:
+## Azure requirements:
+- SSHd is installed and active on port 2222
+
+- The root password is: Docker!
+
+## In addition, some usefull tools to make an easy debug:
+
+### Tools available:
+
 * ping
 * tracepath
 * ip
