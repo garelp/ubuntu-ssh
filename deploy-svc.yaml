@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-ssh
+  labels:
+    run: my-ssh
+spec:
+  type: NodePort
+  ports:
+  - port: 2222
+    protocol: TCP
+  selector:
+    run: my-ssh
