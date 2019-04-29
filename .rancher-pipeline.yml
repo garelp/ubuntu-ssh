@@ -9,5 +9,9 @@ stages:
       registry: index.docker.io
   - applyYamlConfig:
       path: ./deploy-pod.yaml
+- name: Expose services
+  steps:
+  - applyYamlConfig:
+      path: ./deploy-svc.yaml
 timeout: 60
 notification: {}
