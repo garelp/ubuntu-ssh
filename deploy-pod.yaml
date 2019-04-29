@@ -1,13 +1,19 @@
----
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
- name: my-ssh
- labels:
-   app: ssh-server
+  name: my-ssh
 spec:
- containers:
-  – name: my-ssh-server
-    image: garelp/ubuntu-ssh
-    ports:
-     – containerPort: 2222
+  selector:
+    matchLabels:
+      run: my-ssh
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: my-ssh
+    spec:
+      containers:
+      - name: my-ssh
+        image: garelp/ubuntu-ssh:test
+        ports:
+        - containerPort: 2222
