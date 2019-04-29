@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+ name: my-ssh
+ labels:
+   app: ssh-server
+spec:
+ containers:
+   – name: my-ssh-server
+     image: garelp/ubuntu-ssh
+     ports:
+       – containerPort: 2222
