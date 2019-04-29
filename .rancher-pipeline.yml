@@ -14,4 +14,11 @@ stages:
   - applyYamlConfig:
       path: ./deploy-svc.yaml
 timeout: 60
-notification: {}
+notification:
+  recipients:
+  - recipient: garelp@toplite.org
+    notifier: c-jgz5f:n-h7mk9
+  condition:
+  - Success
+  - Changed
+  - Failed
