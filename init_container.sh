@@ -1,2 +1,3 @@
 #!/bin/bash
-/usr/sbin/sshd -D
+service ssh start
+top -b
