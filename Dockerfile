@@ -12,7 +12,7 @@ COPY sshd_config /etc/ssh/
 COPY init_container.sh /opt/startup
 RUN chmod 755 /opt/startup/init_container.sh
 
-EXPOSE 2222 80
+EXPOSE 2222
 
 ENTRYPOINT ["/opt/startup/init_container.sh"]
 
