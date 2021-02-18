@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-ssh
-        image: garelp/ubuntu-ssh:test
+        image: garelp/ubuntu-ssh:1.8
         ports:
         - containerPort: 2222
