@@ -20,5 +20,3 @@
 * dig
 
 Thanks.
-
-test
