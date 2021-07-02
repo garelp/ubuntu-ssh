@@ -18,5 +18,6 @@
 * wget
 * nslookup
 * dig
+* lftp
 
 Thanks.

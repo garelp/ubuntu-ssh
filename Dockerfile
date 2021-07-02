@@ -4,7 +4,7 @@
 FROM ubuntu:bionic
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends openssh-server iproute2 net-tools dnsutils netcat curl iputils-tracepath iputils-ping wget tcpdump ca-certificates \
+    && apt-get install -y --no-install-recommends openssh-server iproute2 net-tools dnsutils netcat curl iputils-tracepath iputils-ping wget lftp tcpdump ca-certificates \
     && mkdir -p /opt/startup \
     && echo "root:Docker!" | chpasswd 
 
