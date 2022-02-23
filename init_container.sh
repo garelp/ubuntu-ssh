@@ -1,3 +1,3 @@
 #!/bin/bash
-service ssh start
-top -b
+mkdir -p /var/run/sshd
+/usr/sbin/sshd -D -e

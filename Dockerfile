@@ -1,7 +1,8 @@
 # ------------------------
 # SSH Server support
 # ------------------------
-FROM ubuntu:bionic
+ARG UBUNTU_VERSION=bionic
+FROM ubuntu:$UBUNTU_VERSION
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends openssh-server iproute2 net-tools dnsutils netcat curl iputils-tracepath iputils-ping wget lftp tcpdump ca-certificates \
